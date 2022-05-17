@@ -1,3 +1,8 @@
+:root {
+    /* Variables */
+    --Blue: #0062ff;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,11 +27,11 @@ a {
     text-decoration: none;
     -webkit-text-decoration: none;
         /* For Safari */
-    color: #0062ff;
+    color: var(--Blue);
 }
 a:hover {
-    text-decoration: underline #0062ff;
-    -webkit-text-decoration: underline #0062ff; 
+    text-decoration: underline var(--Blue);
+    -webkit-text-decoration: underline var(--Blue); 
 }
 header {
     width: 100%;
@@ -100,4 +105,19 @@ header {
     }
 }
 
-                            
+footer {
+    padding: 1.5em;
+    background-color: grey;
+    color: white;
+    text-align: center;  
+}
+footer a {
+    color: white;
+    text-decoration: underline var(--Blue);
+    -webkit-text-decoration: underline var(--Blue); 
+        /* For Safari */
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: var(--Blue);
+}                            
