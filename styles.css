@@ -41,7 +41,7 @@ header {
     /* margin-top: var(--NavBarHeight);     */
     background-color: gray;
     background-image: linear-gradient(rgba(47,45,65,.7),rgba(47,45,65,.7)), 
-                                url("images/tile.jpg"); 
+                      url("images/tile.jpeg"); 
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
@@ -55,7 +55,8 @@ header {
 }
 
 .message {
-    background-color: var(--Blue);
+    background-color: #be641aa6;
+    /* #3164a8bf */
     color: white;
     text-align: center;
     margin: 2rem 1rem;
@@ -131,11 +132,11 @@ footer {
 }
 footer a {
     color: white;
-    text-decoration: underline var(--Blue);
-    -webkit-text-decoration: underline var(--Blue); 
+    text-decoration: underline #0062ff;
+    -webkit-text-decoration: underline #0062ff; 
         /* For Safari */
     transition: color 0.3s;
 }
 footer a:hover {
-    color: var(--Blue);
+    color: #0062ff;
 }                            
