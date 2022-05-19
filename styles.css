@@ -17,7 +17,21 @@
     bottom: 0.5px;
     overflow-x: hidden;
     overflow-y: auto;   
-}   
+}
+/* https://stackoverflow.com/a/69137897 */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+    img {
+        image-rendering: -webkit-optimize-contrast !important;
+    }
+}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    img {
+        image-rendering: unset !important;
+    }
+}}         
 body {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(240, 240, 240);
@@ -85,11 +99,13 @@ header {
 }
 .galleryGrid div {
     display: grid;
+    aspect-ratio: 4/5;
 }
 .galleryGrid img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    aspect-ratio: 4/5;
     border-radius: 10px;
     transition: box-shadow .2s;
 }
@@ -117,7 +133,7 @@ header {
     }
     .galleryGrid {
         grid-template-columns: repeat(3, 1fr);
-        padding: 3rem 9rem;        
+        padding: 3rem 11rem;        
     }
     .seferTitle {
         font-size: 1.2rem;
