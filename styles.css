@@ -8,7 +8,10 @@
     padding: 0;
 }
 .wrapper {
-    /* To prevent address bar from hiding on mobile browsers, which would have caused the background image on homepage to resize on scroll */
+                    
+                    /* CHECK TO SEE IF THIS IS NECESSARY FOR THIS WEBSITE */
+
+    /* To prevent address bar from hiding on mobile browsers, which might cause the background image on homepage to resize on scroll */
       /* https://stackoverflow.com/a/61683565/11528872 */
     position: absolute;
     top: 0.1px;
