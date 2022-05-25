@@ -18,20 +18,24 @@
     overflow-x: hidden;
     overflow-y: auto;   
 }
+
 /* https://stackoverflow.com/a/69137897 */
 @media screen and (-webkit-min-device-pixel-ratio:0)
 and (min-resolution:.001dpcm) {
     img {
-        image-rendering: -webkit-optimize-contrast !important;
+        image-rendering: -webkit-optimize-contrast;
     }
 }
-
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
     img {
-        image-rendering: unset !important;
+        image-rendering: unset;
     }
-}}         
+}}
+.removeSharpening {
+    image-rendering: unset;
+}   
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(240, 240, 240);
