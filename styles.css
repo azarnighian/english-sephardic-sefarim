@@ -172,6 +172,9 @@ footer a:hover {
     html {
         font-size: 19px; 
     }
+    .galleryGrid img {
+        width: 90%;
+    }
 }
 @media screen and (min-width: 2000px) {    
     html {
