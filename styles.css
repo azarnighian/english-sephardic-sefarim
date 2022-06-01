@@ -107,7 +107,7 @@ header, .message, a, h1, p  {
 .galleryGrid img {
     width: 100%;
     height: auto;
-    object-fit: scale-down;
+    object-fit: contain;
     aspect-ratio: 4/5;
     border-radius: 10px;
     transition: box-shadow .2s;
@@ -167,3 +167,14 @@ footer a {
 footer a:hover {
     color: #0062ff;
 }                            
+
+@media screen and (min-width: 1400px) {
+    html {
+        font-size: 19px; 
+    }
+}
+@media screen and (min-width: 2000px) {    
+    html {
+      font-size: 33px;
+    }
+  }
