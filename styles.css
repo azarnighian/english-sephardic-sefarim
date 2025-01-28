@@ -106,6 +106,7 @@ header, .message, a, h1, p  {
 .galleryGrid img {
     width: 100%;
     height: auto;
+    padding: 2rem;
     object-fit: contain;
     aspect-ratio: 4/5;
     border-radius: 10px;
@@ -116,8 +117,8 @@ header, .message, a, h1, p  {
         /* https://boxshadows.com/presets */
     cursor: pointer;  
 }
-.addWhiteBackground {
-    padding: 2rem;
+.removePadding {
+    padding: 0 !important;
 }
 .seferTitle {
     font-size: 1.5rem;
